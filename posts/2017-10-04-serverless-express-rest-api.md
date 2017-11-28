@@ -57,7 +57,7 @@ app.get('/', function (req, res) {
   res.send('Hello World!')
 })
 
-module.exports.handler = serverless(app);
+exports.handler = serverless(app);
 ```
 
 This is a very simple application that returns `"Hello World!"` when a request comes in on the root path `/`.
